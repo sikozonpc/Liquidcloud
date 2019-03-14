@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+    .navbar h1 {
+        margin-left: 70px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 46px;
+    }
+
+    .navbar .links, .navbar .auth {
+        list-style: none;
+        display: flex;
+        
+    }
+        .navbar .links > li > a, .navbar .auth > li > a{
+            text-decoration: none;
+            color: #fff;
+            margin: 0 30px;
+            font-family: Fira Sans;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 16px;
+        }
+            .navbar .links > li > a:hover {
+                color: var(--orange);
+            }
+        .navbar .auth {
+            margin-right: 20px;
+        }
+        .navbar .auth > li > a {
+            margin: 0 10px;
+        }
+        
+        
+    

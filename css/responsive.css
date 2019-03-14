@@ -1,0 +1,34 @@
+.fa-bars {
+    display: none !important;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-size: 2.2rem;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 980px){
+    .navbar .links, .navbar .auth {
+        display: none;
+    }
+    .fa-bars {
+        display: block !important;
+    }
+  
+}
+
+@media (max-width: 850px){
+    #clouds {
+        display: none;
+    }
+   
+}
+@media (max-width: 350px){
+    .header h2 {
+        font-size: 24px !important;
+    }
+    .header {
+        text-align: left !important;
+    }
+}

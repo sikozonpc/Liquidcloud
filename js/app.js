@@ -1,0 +1,1 @@
+window.onload = ()  =>  console.log("Hello user! If you are not a developer you shouln't be here.");
