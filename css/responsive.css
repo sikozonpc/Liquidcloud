@@ -8,7 +8,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 980px){
+@media screen and  (max-width: 980px){
     .navbar .links, .navbar .auth {
         display: none;
     }
@@ -18,17 +18,66 @@
   
 }
 
-@media (max-width: 850px){
+@media screen and  (max-width: 870px){
     #clouds {
         display: none;
     }
-   
+    .header .intro .computer-img {
+       display: none;
+    }
+
+    /* Main 1*/
 }
-@media (max-width: 350px){
+
+@media screen and (max-width: 720px){
+    .main2 {
+        margin-top: -170px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .header {
+        padding: 20px;
+    }
+    .header .intro-text {
+        width: 100%;
+    }
+    .main2 {
+        margin-top: -90px;
+    }
+}
+@media screen and (max-width: 600px){
+    .popup {
+        width: 80%;
+    }
     .header h2 {
         font-size: 24px !important;
     }
     .header {
-        text-align: left !important;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 480px){
+    .main2 {
+        margin-top: 450px !important;
+    }
+    .main .advantages-list {
+        padding: 20px;
+        text-align: center;
+    }
+    .navbar h1 {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .fa-bars {
+        margin-top: 10px;
+    }
+}
+@media screen and  (max-width: 380px){
+    .main2 {
+        margin-top: 590px !important;
+    }
+    .features-desc {
+        
     }
 }

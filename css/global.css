@@ -12,9 +12,9 @@ html {
     scroll-behavior: smooth;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
-    height: 100%;
 }
 body, html {
+    width: 100%;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -23,12 +23,14 @@ body, html {
 
 
 .root {
+    width: 100%;
     height: 100%;
     margin-top: -20px;
-    padding-bottom: 500px;
+    padding-bottom: 300px;
 }
 
 .bg {
+    left:0;
     background-color: transparent;
     background-image:  url("../assets/art/Slice.svg");
 
@@ -175,5 +177,5 @@ strong {
     width: 500px;
     margin: auto;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 70px;
 }
