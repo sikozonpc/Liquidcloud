@@ -1,0 +1,63 @@
+.footer {
+    position: relative; 
+    
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(116.61deg, #5A3EBE 15.92%, #8165E4 76.8%);
+    color: #fff;
+    padding-top: 50px;
+}   
+.footer .outer {
+    display: flex;
+    flex-flow: row;
+    box-sizing: border-box;
+} 
+    .footer .outer .desc {
+        margin-left: 150px;
+        margin-top: 45px;
+    }
+    .footer .outer .lists {
+        margin-top: 150px;
+    }
+        .footer .desc > h1 {
+            font-size: 54px;
+        }
+
+    .footer .outer > ul {
+        display: flex;
+        flex-flow: row;
+        box-sizing: border-box;
+        list-style: none;
+    }
+        .outer > ul > ul {
+            list-style: none;
+        }
+            .outer > ul > ul > li > a, p {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 30px;
+                color: #E9E9E9;
+            }
+            .outer > ul > ul > li > p {
+                line-height: 20px;
+            }
+                .outer > ul > ul:last-child > li >p{
+                    max-width: 250px;
+                }
+
+
+.footer .floor {
+    display: flex;
+    flex-flow: row;
+    margin-top: 140px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+    .floor > a {
+        text-decoration: none;
+        color: #fff;
+    }

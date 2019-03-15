@@ -60,7 +60,7 @@ body, html {
 }
 .bg3 {
     background-color: transparent;
-    background-image:  url("../assets/art/bg2.svg");
+    background-image:  url("../assets/art/bg3.svg");
 
     height: 100%;
     margin-left: -2px;
@@ -70,7 +70,7 @@ body, html {
     /*background-position: center;*/
     background-repeat: no-repeat;
 
-    z-index: 1;
+    z-index: 100;
 }
 
 
@@ -81,6 +81,7 @@ body, html {
     padding: 10px 20px;
     cursor: pointer;
     color: #333;
+    text-decoration: none;
 
     transition: 0.5s all ease;
 }
@@ -100,6 +101,7 @@ body, html {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
+    text-decoration: none;
     line-height: normal;
     color: rgba(68, 61, 61, 0.71);
     border: 1px solid #fff;
@@ -134,13 +136,14 @@ body, html {
 
 .btn-simple {
     background: #FFFFFF;
+    text-decoration: none;
     border-radius: 5px;
     display: inline-block;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 16px;
     line-height: normal;
-    color: #333333;
+    color: #555;
     border: 0;
     padding: 10px 20px;
     cursor: pointer;
