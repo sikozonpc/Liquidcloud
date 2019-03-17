@@ -1,27 +1,27 @@
 .main2 {
     margin-top: 100px;
-    width: 100%;
+ 
     padding: 50px 20px;
     box-sizing: border-box;
-    background: rgba(164, 135, 231, 0.253);
-    margin-top: -390px;
+  
+    max-width: 1180px;
+    margin: 50px auto;
+    box-sizing: border-box;
 }
     .features-desc {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+
         padding: 0;
     }
-        .features-desc > h2,p {
-            width: 600px;
-            text-align: left;
+        .features-desc > h2 {
+            margin: 30px auto;
+            text-align: center;
         }
         .features-desc > h2 {
             font-style: normal;
             font-weight: 500;
-            font-size: 30px;
+            font-size: 32px;
             line-height: normal;
-
+            margin-bottom: 50px;
             color: #333333;
         }
         .features-desc > p {
@@ -29,42 +29,51 @@
             font-weight: normal;
             font-size: 18px;
             line-height: normal;
-
+            text-align: center;
             color: #666666;
+            margin-bottom: 100px;
         }
         
         .features-list {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
+            display: block;
             list-style: none;
-            margin: auto;
-            padding: 0;
+            margin: 30px auto;
         } 
-        .features-list li > h4 {
+        .features-list li > div > h4 {
+            line-height: 1.4;
+            font-size: 2rem;
+            text-align: left;
+            font-weight: 700;
+            color: #070E18;
+        }
+        .features-list li > div {
+            width: 70%;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        .features-list li > div > p {
+            display: block;
             font-style: normal;
             font-weight: normal;
-            font-size: 24px;
-            line-height: normal;
-            margin-bottom: 5px;
-            color: #333333;
+            text-align: left;
+            font-size: 18.8px;
+            color: rgb(7, 14, 24);
+            line-height: normal; 
         }
-        .features-list li > p {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: normal;
-            width: 100%;
-            color: #666666;
-        }
+            .features-list li:nth-child(2) > *{
+                margin-left: auto;
+            }
         .features-list li {
+            max-width: 1152px;
             display: flex;
-            flex-flow: column;
-            max-width: 400px;
-            margin: 5px;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 50px auto;
         }
         .features-list li > img {
+            margin: 0;
             width: 120px;
             height: 120px;
-            margin: auto;
+           
+            vertical-align: middle;
         }

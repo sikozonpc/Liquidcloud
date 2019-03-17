@@ -31,13 +31,14 @@
             flex-flow: column;
 
             background: #FFFFFF;
-            border: 1px solid #f0f0f0;
+            
             box-sizing: border-box;
-            box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            margin: 10px 5px;
-            width: 200px;
-            padding: 20px;
+            box-shadow: rgba(200, 203, 207, 0.5) 0px 0px 15px;
+            border-radius: 6px;
+            margin: 20px 20px;
+            max-width: 200px;
+            
+            padding: 30px;
         }
         .perks-list li img {
             width: 80px;
@@ -55,19 +56,19 @@
         }
     
     .advantages-list {
-        margin: auto;
+        margin: 50px auto;
         padding: 0;
         margin-top: 100px;
         text-align: left;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
+        max-width: 1080px;
     }
         .advantages-list li {
             list-style: none;
-            width: 350px;
-            display: flex;
-            flex-flow: column;
+            max-width: 350px;
+            margin-top: 20px;
             padding: 0;
 
         }
@@ -76,17 +77,18 @@
             font-weight: normal;
             font-size: 26px;
             line-height: normal;
+            margin:0;
 
-            color: #333333;
+            color: #070E18;
         }
         .advantages-list p {
             font-style: normal;
             font-weight: normal;
-            font-size: 14px;
+            font-size: 15px;
             line-height: normal;
             width: 100%;
 
-            color: #666666;
+            color: #333;
         }
 
 
