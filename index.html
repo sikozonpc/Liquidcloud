@@ -12,29 +12,25 @@
     <!-- Fire Sans Font -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700" rel="stylesheet">
     <!-- Styles -->
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/clouds.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/main2.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/credits.css">
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <div class="root bg">
-        
+        <!-- To top button -->
+        <button onclick="toTop()" id="topButton" title="Go to top"><i class="fas fa-angle-up"></i></button>
         <!---------------------------->
         <!-----------NAVBAR----------->
         <!---------------------------->
         <nav class="navbar" data-aos="zoom-in" id="nav">
-            <h1>Liquidcloud</h1>
             <i class="fas fa-bars"></i>
+            <h1>Liquidcloud</h1>
+           
             <ul class="links">
                 <li><a href="#solutions">Solutions</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#">Support</a></li>
             </ul>
             <ul class="auth">
@@ -44,6 +40,15 @@
                 <li><a href="#" class="btn">Login</a></li>
             </ul>
         </nav>
+
+        <nav class="mobile">
+            <ul class="mobile__items">
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+
         <div id="clouds">
             <div class="cloud x1"></div>
             <div class="cloud x2"></div>
@@ -138,8 +143,8 @@
          <!---------------------------->
         <!-----------MAIN2------------->
         <!---------------------------->
-       
-        <div class="main2">
+        
+        <div class="main2" id="features">
             <ul class="features-desc" >
                 <h2 data-aos="fade-left" id="fade" data-aos-duration="1500">A reasonable development platform for all devices</h2>
                 <p data-aos="fade-right" id="fade" data-aos-duration="1500">Liquidcloud’s integrated console/dashboard let’s developers create and manage
@@ -148,8 +153,8 @@
             </ul>
 
             <ul class="features-list">
-                <li>
-                    <img src="assets/icons/feature1.png">
+                <li data-aos="fade-left" id="fade" data-aos-duration="1000">
+                    <img src="assets/features/testing.svg">
                     <div> 
                         <h4>Feature testing </h4>
                         <p>Test a feature before you launch in a 
@@ -157,7 +162,8 @@
                                 special features and analitics.  </p>
                     </div>                
                 </li>
-                <li>
+                <li data-aos="fade-left" id="fade" data-aos-duration="1000">
+                    <img src="assets/features/login.svg">
                     <div>
                         <h4>Secure login  </h4>
                         <p>Provide to your users a flexible and
@@ -165,10 +171,10 @@
                                 our servers. lorem ipsum, dolores
                         </p>          
                     </div>                    
-                    <img src="assets/icons/feature3.png">  
+                    
                 </li>
-                <li>
-                    <img src="assets/icons/feature2.png">
+                <li data-aos="fade-left" id="fade" data-aos-duration="1000">
+                    <img src="assets/features/realtime.svg">
                     <div>
                         <h4>Real-time changes</h4>
                         <p>Implement or quick-fix parts of 
@@ -193,21 +199,21 @@
             </div>
             
             <ul class="lists">
-                <ul data-aos="fade-down" data-aos-duration="2000">
+                <ul data-aos="fade-down" data-aos-duration="1500">
                     <li><h3>Useful Links</h3></li>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">My Account</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">About</a></li>
                 </ul>
-                <ul data-aos="fade-down" data-aos-duration="2000">
+                <ul data-aos="fade-down" data-aos-duration="1500">
                     <li><h3>Company</h3></li>
                     <li><a href="#">Tech Support</a></li>
                     <li><a href="#">Sales Support</a></li>
                     <li><a href="#">Chat with us</a></li>
                     <li><a href="#">FAQ</a></li>
                 </ul>
-                <ul data-aos="fade-down" data-aos-duration="2000">
+                <ul data-aos="fade-down" data-aos-duration="1500">
                     <li><h3>Disclaimer</h3></li>
                     <li><p>Liquidcloud is not a real company and the purporse of this website is not to promote any product or service.</p></li>
                     <li><p>Some of the art used is not owned by me, the respective credits are given.</p></li>
@@ -216,14 +222,24 @@
         </div>
         <div class="floor">
                 <p>Copyright © Liquidcloud 2019 - author <a style="color: burlywood;text-decoration: none;" target="_blank" href="https://twitter.com/tiago_taquelim">@taquelim</a></p>
-                <a href="#">Credits</a>
+                <a onclick="showCreditsPopup()" style="cursor: pointer;">Credits</a>
                 <a href="#">Terms of Use</a>
                 <a href="#">Privacy Policy</a>
             </div>
         </div>
-        
-      
-  
+
+        <!-- Credits popup -->
+        <section class="credits" id="creditsPopup">
+                <a onclick="hideCreditsPopup()"><i id="exit" class="fas fa-times"></i></a>
+            <h1>Credits</h1>
+            <hr>
+            <p>Some of the art/images used on this project were not made by me</p>
+            <p>and so this section is to give the right credits.</p>
+            <ul>
+                <li><a href="https://undraw.co/" target="_blank">unDraw, for the features svg's</a></li>
+                <li><a href="https://pattern.flaticon.com/" target="_blank">Flaticon, for the logos at the perks list</a></li>
+            </ul>
+        </section>
         </footer>
         
     </div>

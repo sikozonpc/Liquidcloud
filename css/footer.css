@@ -56,10 +56,13 @@
     flex-flow: row;
     margin-top: 140px;
     width: 100%;
-    box-sizing: border-box;
     justify-content: space-between;
-    padding: 0 40px;
+    align-items: flex-start;
+    padding: 20px 40px;
 }
+    .floor > p {
+        margin: 0;
+    }
     .floor > a {
         text-decoration: none;
         color: #fff;

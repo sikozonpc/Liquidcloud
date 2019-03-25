@@ -1,0 +1,39 @@
+
+.credits {
+    position: fixed;
+    top: 200px;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    transform: translateY(100vh);
+    transition: 1s all ease;
+    z-index: 999;
+}
+    .credits #exit {
+        position: absolute;
+        cursor: pointer;
+        color: rgb(240, 86, 86);
+        top: 20px;
+        right: 20px;
+    }
+.credits h1 {
+    text-align: center;
+}
+.credits > p {
+    margin: 0;
+    line-height: 25px;
+}
+.credits ul {
+    list-style: none;
+}
+.credits ul li a {
+    color: rgb(146, 146, 230);
+
+}
+    
