@@ -1,5 +1,11 @@
 
 
+@media screen and (max-width: 1050px){
+    .intro-text {
+        margin-left: 30px;
+    }
+}
+
 @media screen and  (max-width: 980px){
     .navbar .links, .navbar .auth {
         display: none;
@@ -13,6 +19,9 @@
 @media screen and  (max-width: 870px){
     #clouds {
         display: none;
+    }
+    .intro-text {
+        margin-left: 0;
     }
     .header .intro .computer-img {
        display: none;
