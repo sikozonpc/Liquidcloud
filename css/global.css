@@ -157,11 +157,23 @@ body, html {
     border: 0;
     padding: 10px 20px;
     cursor: pointer;
+
+    transition: 0.3s all ease;
 }
+    .btn-simple:hover {
+        background: #f0f0f0;
+        color: #333;
+        transform: scale(1.05);
+    }
 .inverted {
     color: #fff;
     background: var(--orange);
 }
+    .inverted:hover {
+        background: rgb(231, 136, 68);
+        color: #Fff;
+      
+    }
 
 .arrow-orange {
     background: var(--orange);

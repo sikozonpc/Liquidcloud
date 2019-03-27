@@ -35,7 +35,7 @@
         .outer > ul > ul {
             list-style: none;
         }
-            .outer > ul > ul > li > a, p {
+            .outer > ul > ul > li > a, .outer > ul > ul > li > p {
                 color: #fff;
                 text-decoration: none;
                 font-weight: 300;

@@ -6,6 +6,7 @@
   
     max-width: 1180px;
     margin: 50px auto;
+    margin-bottom: 0;
     box-sizing: border-box;
 }
     .features-desc {
